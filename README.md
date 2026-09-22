@@ -12,9 +12,9 @@ easyeda-plugin-suite
    ├─ easyeda-ai-plugin                 AgentDock 插件父仓库
    │  ├─ skills/easyeda-api             独立 Skill 私有仓库
    │  ├─ skills/easyeda-eprj3           独立 Skill 私有仓库
-   │  ├─ skills/easyeda-pcb-layout-routing
-   │  ├─ skills/easyeda-pro-format-skill
-   │  ├─ skills/easyeda-schematic-net-fanout
+   │  ├─ skills/easyeda-pcb-layout-routing    独立 Skill 私有仓库
+   │  ├─ skills/easyeda-pro-format-skill      独立 Skill 私有仓库
+   │  ├─ skills/easyeda-schematic-net-fanout  独立 Skill 私有仓库
    │  └─ mcp/easyeda-pcb                独立 MCP 私有仓库
    └─ easyeda-api-plugin                Gateway、Protocol、Runtime、Bridge
 ```

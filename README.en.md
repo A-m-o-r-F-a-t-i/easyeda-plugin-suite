@@ -12,9 +12,9 @@ easyeda-plugin-suite
    ├─ easyeda-ai-plugin                 AgentDock plugin parent
    │  ├─ skills/easyeda-api             independent private Skill repository
    │  ├─ skills/easyeda-eprj3           independent private Skill repository
-   │  ├─ skills/easyeda-pcb-layout-routing
-   │  ├─ skills/easyeda-pro-format-skill
-   │  ├─ skills/easyeda-schematic-net-fanout
+   │  ├─ skills/easyeda-pcb-layout-routing    independent private Skill repository
+   │  ├─ skills/easyeda-pro-format-skill      independent private Skill repository
+   │  ├─ skills/easyeda-schematic-net-fanout  independent private Skill repository
    │  └─ mcp/easyeda-pcb                independent private MCP repository
    └─ easyeda-api-plugin                Gateway, Protocol, Runtime, and Bridge
 ```
