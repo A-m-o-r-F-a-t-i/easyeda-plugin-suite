@@ -21,7 +21,7 @@ easyeda-plugin-suite
 
 | 直接子模块 | 当前版本 | 公开仓库 | 作用 |
 | --- | ---: | --- | --- |
-| `plugins/easyeda-ai-plugin` | 2.8.8 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill（PCB Skill 5.4.0）与 PCB MCP 2.4.8；PCB Skill 恢复布局、布线、铺铜和交付阶段 DRC，并明确有限豁免规则 |
+| `plugins/easyeda-ai-plugin` | 2.9.1 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill（PCB Skill 5.5.1）与 PCB MCP 2.5.0；新板框以原点为中心，小型板可一次完成最多 100 个展开布局操作，每轮跨对象焊盘重叠清零后才允许继续 |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | 管理 Enhanced API Gateway、Protocol v2、共享运行时和本机 Bridge |
 
 所有仓库均为公开仓库，可直接递归克隆，无需 GitHub 私有仓库访问权限。
