@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | English
 
-This is the top-level private Git repository for the EasyEDA AI toolchain. It does not duplicate lower-level sources. Instead, Git submodules pin exact commits of two complete plugins: the AgentDock EasyEDA AI plugin and the Enhanced API plugin installed on the EasyEDA Pro side. The AI plugin recursively pins five Skills and one PCB MCP, so one recursive clone produces the complete, traceable, and reproducible development tree.
+This is the top-level public Git repository for the EasyEDA AI toolchain. It does not duplicate lower-level sources. Instead, Git submodules pin exact commits of two complete plugins: the AgentDock EasyEDA AI plugin and the Enhanced API plugin installed on the EasyEDA Pro side. The AI plugin recursively pins five Skills and one PCB MCP, so one recursive clone produces the complete, traceable, and reproducible development tree.
 
 ## Layout
 
@@ -10,21 +10,21 @@ This is the top-level private Git repository for the EasyEDA AI toolchain. It do
 easyeda-plugin-suite
 └─ plugins
    ├─ easyeda-ai-plugin                 AgentDock plugin parent
-   │  ├─ skills/easyeda-api             independent private Skill repository
-   │  ├─ skills/easyeda-eprj3           independent private Skill repository
-   │  ├─ skills/easyeda-pcb-layout-routing    independent private Skill repository
-   │  ├─ skills/easyeda-pro-format-skill      independent private Skill repository
-   │  ├─ skills/easyeda-schematic-net-fanout  independent private Skill repository
-   │  └─ mcp/easyeda-pcb                independent private MCP repository
+   │  ├─ skills/easyeda-api             independent public Skill repository
+   │  ├─ skills/easyeda-eprj3           independent public Skill repository
+   │  ├─ skills/easyeda-pcb-layout-routing    independent public Skill repository
+   │  ├─ skills/easyeda-pro-format-skill      independent public Skill repository
+   │  ├─ skills/easyeda-schematic-net-fanout  independent public Skill repository
+   │  └─ mcp/easyeda-pcb                independent public MCP repository
    └─ easyeda-api-plugin                Gateway, Protocol, Runtime, and Bridge
 ```
 
-| Direct submodule | Version | Private repository | Responsibility |
+| Direct submodule | Version | Public repository | Responsibility |
 | --- | ---: | --- | --- |
 | `plugins/easyeda-ai-plugin` | 2.8.8 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills (including PCB Skill 5.4.0) and PCB MCP 2.4.8; the PCB Skill restores placement, routing, repour, and release DRC milestones with bounded waiver rules |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | Maintains the Enhanced API Gateway, Protocol v2, shared runtime, and local Bridge |
 
-Every repository is private. The cloning account must be authorized for the parent and every recursive submodule.
+Every repository is public and can be cloned recursively without private-repository credentials.
 
 ## Full clone
 
@@ -80,4 +80,4 @@ Normal development should happen in the two plugin parent repositories. This sui
 
 ## Licensing
 
-The suite does not impose one blanket open-source license on every member. Each plugin and submodule retains its own license, third-party notices, and upstream attribution. Private visibility does not alter MIT, Apache-2.0, or other third-party rights contained in the components.
+The suite does not impose one blanket open-source license on every member. Each plugin and submodule retains its own license, third-party notices, and upstream attribution. Public visibility does not alter MIT, Apache-2.0, or other third-party rights contained in the components.

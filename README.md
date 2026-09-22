@@ -2,7 +2,7 @@
 
 简体中文 | [English](README.en.md)
 
-这是嘉立创 EDA AI 工具链的最上层私有 Git 仓库。它不复制下层源码，而是通过 Git submodule 固定两个完整插件的具体提交：AgentDock 嘉立创 AI 插件，以及安装在嘉立创 EDA 专业版一侧的 Enhanced API 插件。AI 插件内部继续递归固定 5 个 Skill 与 1 个 PCB MCP，因此一次递归克隆即可得到完整、可追踪、可复现的开发树。
+这是嘉立创 EDA AI 工具链的最上层公开 Git 仓库。它不复制下层源码，而是通过 Git submodule 固定两个完整插件的具体提交：AgentDock 嘉立创 AI 插件，以及安装在嘉立创 EDA 专业版一侧的 Enhanced API 插件。AI 插件内部继续递归固定 5 个 Skill 与 1 个 PCB MCP，因此一次递归克隆即可得到完整、可追踪、可复现的开发树。
 
 ## 结构
 
@@ -10,21 +10,21 @@
 easyeda-plugin-suite
 └─ plugins
    ├─ easyeda-ai-plugin                 AgentDock 插件父仓库
-   │  ├─ skills/easyeda-api             独立 Skill 私有仓库
-   │  ├─ skills/easyeda-eprj3           独立 Skill 私有仓库
-   │  ├─ skills/easyeda-pcb-layout-routing    独立 Skill 私有仓库
-   │  ├─ skills/easyeda-pro-format-skill      独立 Skill 私有仓库
-   │  ├─ skills/easyeda-schematic-net-fanout  独立 Skill 私有仓库
-   │  └─ mcp/easyeda-pcb                独立 MCP 私有仓库
+   │  ├─ skills/easyeda-api             独立 Skill 公开仓库
+   │  ├─ skills/easyeda-eprj3           独立 Skill 公开仓库
+   │  ├─ skills/easyeda-pcb-layout-routing    独立 Skill 公开仓库
+   │  ├─ skills/easyeda-pro-format-skill      独立 Skill 公开仓库
+   │  ├─ skills/easyeda-schematic-net-fanout  独立 Skill 公开仓库
+   │  └─ mcp/easyeda-pcb                独立 MCP 公开仓库
    └─ easyeda-api-plugin                Gateway、Protocol、Runtime、Bridge
 ```
 
-| 直接子模块 | 当前版本 | 私有仓库 | 作用 |
+| 直接子模块 | 当前版本 | 公开仓库 | 作用 |
 | --- | ---: | --- | --- |
 | `plugins/easyeda-ai-plugin` | 2.8.8 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill（PCB Skill 5.4.0）与 PCB MCP 2.4.8；PCB Skill 恢复布局、布线、铺铜和交付阶段 DRC，并明确有限豁免规则 |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | 管理 Enhanced API Gateway、Protocol v2、共享运行时和本机 Bridge |
 
-所有仓库均为私有仓库。克隆账户必须同时拥有父仓库和全部递归 submodule 的访问权限。
+所有仓库均为公开仓库，可直接递归克隆，无需 GitHub 私有仓库访问权限。
 
 ## 完整克隆
 
@@ -80,4 +80,4 @@ git commit -m "chore: update EasyEDA plugin parents"
 
 ## 许可证
 
-该总仓库不为所有成员声明统一开源许可证。每个插件和子模块保留自己的许可证、第三方声明和上游归属；私有可见性不会改变 MIT、Apache-2.0 或其他第三方材料的原始权利。
+该总仓库不为所有成员声明统一开源许可证。每个插件和子模块保留自己的许可证、第三方声明和上游归属；公开可见性不会改变 MIT、Apache-2.0 或其他第三方材料的原始权利。
