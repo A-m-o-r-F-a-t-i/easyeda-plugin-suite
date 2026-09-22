@@ -21,7 +21,7 @@ easyeda-plugin-suite
 
 | 直接子模块 | 当前版本 | 私有仓库 | 作用 |
 | --- | ---: | --- | --- |
-| `plugins/easyeda-ai-plugin` | 2.8.5 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill 与 PCB MCP 2.4.7，生成 AgentDock 可安装插件 |
+| `plugins/easyeda-ai-plugin` | 2.8.7 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill（PCB Skill 5.3.1）与 PCB MCP 2.4.8，生成 AgentDock 可安装插件 |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | 管理 Enhanced API Gateway、Protocol v2、共享运行时和本机 Bridge |
 
 所有仓库均为私有仓库。克隆账户必须同时拥有父仓库和全部递归 submodule 的访问权限。

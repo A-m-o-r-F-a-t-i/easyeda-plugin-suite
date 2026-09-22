@@ -21,7 +21,7 @@ easyeda-plugin-suite
 
 | Direct submodule | Version | Private repository | Responsibility |
 | --- | ---: | --- | --- |
-| `plugins/easyeda-ai-plugin` | 2.8.5 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills and PCB MCP 2.4.7 and builds the installable AgentDock plugin |
+| `plugins/easyeda-ai-plugin` | 2.8.7 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills (including PCB Skill 5.3.1) and PCB MCP 2.4.8 and builds the installable AgentDock plugin |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | Maintains the Enhanced API Gateway, Protocol v2, shared runtime, and local Bridge |
 
 Every repository is private. The cloning account must be authorized for the parent and every recursive submodule.
