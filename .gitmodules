@@ -1,0 +1,6 @@
+[submodule "plugins/easyeda-ai-plugin"]
+	path = plugins/easyeda-ai-plugin
+	url = https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin.git
+[submodule "plugins/easyeda-api-plugin"]
+	path = plugins/easyeda-api-plugin
+	url = https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin.git
