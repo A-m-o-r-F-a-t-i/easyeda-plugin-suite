@@ -21,7 +21,7 @@ easyeda-plugin-suite
 
 | Direct submodule | Version | Public repository | Responsibility |
 | --- | ---: | --- | --- |
-| `plugins/easyeda-ai-plugin` | 2.9.3 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills (including PCB Skill 5.5.3) and PCB MCP 2.5.1; circles use the origin as center, polygons use an origin vertex, irregular boards need not be geometrically centered, and the overlap placement gate remains enforced |
+| `plugins/easyeda-ai-plugin` | 2.10.1 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills (including PCB Skill 5.6.1) and PCB MCP 2.6.1; groups placement around service endpoints and constrained trial routes, blocks modeled conflicts before any write, reconciles uncertain results read-only, and reports functional-group geometry |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | Maintains the Enhanced API Gateway, Protocol v2, shared runtime, and local Bridge |
 
 Every repository is public and can be cloned recursively without private-repository credentials.
