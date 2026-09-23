@@ -3,7 +3,7 @@
   "components": [
     {
       "name": "easyeda-ai-plugin",
-      "version": "2.10.1",
+      "version": "3.0.0",
       "path": "plugins/easyeda-ai-plugin",
       "repository": "https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin.git"
     },
