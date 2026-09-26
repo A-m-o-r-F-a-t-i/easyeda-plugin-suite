@@ -21,7 +21,7 @@ easyeda-plugin-suite
 
 | 直接子模块 | 当前版本 | 公开仓库 | 作用 |
 | --- | ---: | --- | --- |
-| `plugins/easyeda-ai-plugin` | 3.0.0 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill（PCB Skill 6.0.0、API Skill 2.4.0）与 PCB MCP 3.0.0；MCP 优先封装常见操作，直接大批量编辑，提供元件封装朝向网络总览和整体／局部 SVG，AI 自主决定设计与分析时机 |
+| `plugins/easyeda-ai-plugin` | 4.1.2 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | 聚合 5 个 Skill（PCB Skill 7.2.0、API Skill 2.5.0）与 PCB MCP 4.1.0；保持 17 个 MIL-only 工具，并在同一发行包中携带 API Bridge 与 MCP 的锁定生产依赖 |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | 管理 Enhanced API Gateway、Protocol v2、共享运行时和本机 Bridge |
 
 所有仓库均为公开仓库，可直接递归克隆，无需 GitHub 私有仓库访问权限。

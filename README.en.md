@@ -21,7 +21,7 @@ easyeda-plugin-suite
 
 | Direct submodule | Version | Public repository | Responsibility |
 | --- | ---: | --- | --- |
-| `plugins/easyeda-ai-plugin` | 3.0.0 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills (PCB Skill 6.0.0, API Skill 2.4.0) and PCB MCP 3.0.0; MCP-first common-operation wrappers, direct bulk editing, component/footprint/pin-net orientations and board/local SVG; the model owns design and analysis timing |
+| `plugins/easyeda-ai-plugin` | 4.1.2 | [`easyeda-ai-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-ai-plugin) | Aggregates five Skills (PCB Skill 7.2.0, API Skill 2.5.0) and PCB MCP 4.1.0; retains the 17-tool MIL-only surface and packages locked production dependencies for both the API Bridge and MCP |
 | `plugins/easyeda-api-plugin` | 1.1.5 | [`easyeda-api-plugin`](https://github.com/A-m-o-r-F-a-t-i/easyeda-api-plugin) | Maintains the Enhanced API Gateway, Protocol v2, shared runtime, and local Bridge |
 
 Every repository is public and can be cloned recursively without private-repository credentials.
